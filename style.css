@@ -1,0 +1,106 @@
+body {
+    background: #f4f4f4;
+    font-family: 'Tajawal', Arial, sans-serif;
+    margin: 0;
+    direction: rtl;
+    transition: direction 0.3s;
+}
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px 24px 16px 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a5568;
+}
+#todo-form {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+}
+#todo-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: right;
+}
+button[type="submit"], #clear-btn {
+    padding: 8px 16px;
+    border: none;
+    background: #3182ce;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button[type="submit"]:hover, #clear-btn:hover {
+    background: #225ea8;
+}
+ul#todo-list {
+    list-style: none;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 18px;
+    min-height: 40px;
+}
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 8px;
+    background: #f7fafc;
+    border-radius: 4px;
+    transition: background 0.2s;
+    flex-direction: row-reverse;
+}
+li.completed {
+    text-decoration: line-through;
+    color: #a0aec0;
+    background: #e2e8f0;
+}
+.delete-btn {
+    background: #e53e3e;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 0;
+    transition: background 0.2s;
+}
+.delete-btn:hover {
+    background: #c53030;
+}
+.lang-switch {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.lang-switch button {
+    padding: 6px 18px;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    background: #e2e8f0;
+    color: #333;
+    margin: 0 2px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+.lang-switch button.active {
+    background: #3182ce;
+    color: #fff;
+}
