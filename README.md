@@ -1,1 +1,1 @@
-# modern-todo-app
+# todo-app
